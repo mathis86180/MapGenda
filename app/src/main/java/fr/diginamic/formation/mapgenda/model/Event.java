@@ -8,6 +8,14 @@ public class Event {
     private Double posX;
     private Double posY;
 
+    /**
+     * 
+     * @param id
+     * @param name
+     * @param description
+     * @param posX
+     * @param posY
+     */
     public Event(Integer id, String name, String description, Double posX, Double posY) {
         this.id = id;
         this.name = name;
