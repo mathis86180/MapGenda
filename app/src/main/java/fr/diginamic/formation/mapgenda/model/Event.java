@@ -1,5 +1,7 @@
 package fr.diginamic.formation.mapgenda.model;
 
+import java.util.Date;
+
 public class Event {
 
     private Integer id;
@@ -7,22 +9,27 @@ public class Event {
     private String description;
     private Double posX;
     private Double posY;
+    private Date startingDate;
+    private Date endingDate;
 
     /**
-     * 
+     *
      * @param id
      * @param name
      * @param description
      * @param posX
      * @param posY
      */
-    public Event(Integer id, String name, String description, Double posX, Double posY) {
+    public Event(Integer id, String name, String description, Double posX, Double posY, Date startingDate, Date endingDate) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.posX = posX;
         this.posY = posY;
+        this.startingDate = startingDate;
+        this.endingDate = endingDate;
     }
+
 
     public Integer getId() {
         return id;
@@ -62,5 +69,21 @@ public class Event {
 
     public void setPosY(Double posY) {
         this.posY = posY;
+    }
+
+    public Date getStartingDate() {
+        return startingDate;
+    }
+
+    public void setStartingDate(Date startingDate) {
+        this.startingDate = startingDate;
+    }
+
+    public Date getEndingDate() {
+        return endingDate;
+    }
+
+    public void setEndingDate(Date endingDate) {
+        this.endingDate = endingDate;
     }
 }
